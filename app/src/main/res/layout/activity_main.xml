@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a 4-digit number:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"/>
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionsTextView"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess"
+        android:layout_below="@id/inputEditText"
+        android:layout_marginTop="50pt"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/orderedCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ordered: 0"/>
+
+    <TextView
+        android:id="@+id/unorderedCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderedCountTextView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Unordered: 0"/>
+
+</RelativeLayout>
